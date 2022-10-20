@@ -8,9 +8,10 @@ import { IotexMainnetConfig } from './IotexMainnetConfig';
 import { IotexTestnetConfig } from './IotexTestnetConfig';
 import { PolygonMainnetConfig } from './PolygonMainnetConfig';
 import { FTMMainnetConfig } from './FTMMainnetConfig';
+import { AVAXMainnetConfig } from './AVAXMainnetConfig';
 import { allowChains } from '../lib/web3-react';
 
-const EthChains = [BSCMainnetConfig, BSCTestnetConfig, ETHMainnetConfig, ETHKovanConfig, IotexTestnetConfig, IotexMainnetConfig, PolygonMainnetConfig, FTMMainnetConfig];
+const EthChains = [BSCMainnetConfig, BSCTestnetConfig, ETHMainnetConfig, ETHKovanConfig, IotexTestnetConfig, IotexMainnetConfig, PolygonMainnetConfig, FTMMainnetConfig, AVAXMainnetConfig];
 
 export const EthNetworkConfig = new EthNetworkState({
   allowChains,
