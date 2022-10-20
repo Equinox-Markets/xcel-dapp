@@ -14,7 +14,8 @@ export const RPC_URLS = {
   4689: 'https://babel-api.mainnet.iotex.io/',
   4690: `https://babel-api.testnet.iotex.io`,
   137: 'https://rpc-mainnet.maticvigil.com/',
-  250: 'https://rpc.ftm.tools/'
+  250: 'https://rpc.ftm.tools/',
+  43114: 'https://api.avax.network/ext/bc/C/rpc'
 };
 
 export const allowChains = Object.keys(RPC_URLS).map((i) => Number(i));
@@ -27,10 +28,10 @@ export function getLibrary(provider: any): Web3Provider {
 
 export const injected = new InjectedConnector({ supportedChainIds: allowChains });
 
-export const ledgerconnect = new LedgerConnector({ chainId: 250, url: "https://babel-ledger.onrender.com" })
+export const ledgerconnect = new LedgerConnector({ chainId: 43114, url: "https://babel-ledger.onrender.com" })
 
 export const walletconnect = new WalletConnectConnector({
-  rpc: { 250: RPC_URLS[250] },
+  rpc: { 43114: RPC_URLS[43114] },
   bridge: 'https://bridge.walletconnect.org',
   qrcode: true,
   pollingInterval: POLLING_INTERVAL
