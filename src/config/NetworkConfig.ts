@@ -7,9 +7,10 @@ import { BSCTestnetConfig } from './BSCTestnetConfig';
 import { IotexMainnetConfig } from './IotexMainnetConfig';
 import { IotexTestnetConfig } from './IotexTestnetConfig';
 import { PolygonMainnetConfig } from './PolygonMainnetConfig';
+import { FTMMainnetConfig } from './FTMMainnetConfig';
 import { allowChains } from '../lib/web3-react';
 
-const EthChains = [BSCMainnetConfig, BSCTestnetConfig, ETHMainnetConfig, ETHKovanConfig, IotexTestnetConfig, IotexMainnetConfig, PolygonMainnetConfig];
+const EthChains = [BSCMainnetConfig, BSCTestnetConfig, ETHMainnetConfig, ETHKovanConfig, IotexTestnetConfig, IotexMainnetConfig, PolygonMainnetConfig, FTMMainnetConfig];
 
 export const EthNetworkConfig = new EthNetworkState({
   allowChains,
@@ -19,7 +20,7 @@ export const EthNetworkConfig = new EthNetworkState({
     }
   },
   chain: new MappingState({
-    currentId: IotexMainnetConfig.chainId,
+    currentId: ETHMainnetConfig.chainId,
     map: EthChains.reduce((p, c) => {
       p[c.chainId] = c;
       return p;
