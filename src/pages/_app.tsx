@@ -11,7 +11,6 @@ import { theme } from '@/lib/theme';
 import { ETHProvider } from '../components/EthProvider';
 import { getLibrary } from '../lib/web3-react';
 import { WalletSelecter } from '../components/WalletSelecter/index';
-import footer from '../components/footer';
 
 
 function MyApp({ Component, pageProps }: AppProps) {
