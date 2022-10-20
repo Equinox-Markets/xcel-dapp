@@ -11,8 +11,6 @@ import { eventBus } from '../lib/event';
 
 export enum Network {
   ETH = 'eth',
-  BSC = 'bsc',
-  IOTEX = 'iotex',
   POLYGON = 'polygon',
   FTM = 'ftm',
   AVAX = 'avax'
