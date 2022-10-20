@@ -59,6 +59,48 @@ export const Home = observer(() => {
       </SimpleGrid>
     </Container>
   );
+  
+      <Container maxW='7xl'>
+      <Flex justifyContent={'center'} alignItems={'center'} mt={10} flexDirection={'column'}>
+        <ChakraLink href='https://github.com/iotexproject/iotex-dapp-sample-v2' isExternal>
+          <Image src={'images/v2.png'} w={'100%'} />
+        </ChakraLink>
+        <Text mt={5}>
+          IoTeX Dapp {lang.t('sample')} V2
+        </Text>
+        <Flex mt={5}>
+          {
+            links.map(link => {
+              return (
+                <ChakraLink href={link.url} isExternal key={link.text} ml={2} _first={{ ml: 0 }} _hover={{}}>
+                  <Text>
+                    {link.text}
+                  </Text>
+                </ChakraLink>
+              );
+            })
+          }
+        </Flex>
+      </Flex>
+      <SimpleGrid minChildWidth='200px' spacing='10px' py='6'>
+        {ToolConfig.map((i) => (
+          <Link key={i.path} href={i.path} as={`${i.path}.html`} passHref>
+            <ChakraLink w='200px' p='4' borderWidth='1px' rounded='md' key={i.name} textDecoration="none" _hover={{ textDecoration: 'none' }}>
+              <Text>{lang.t(i.name)}</Text>
+              {i.tags && (
+                <Stack direction='row' mt='2'>
+                  {i.tags.map((i) => (
+                    <Badge key={i} variant='outline' colorScheme='green'>
+                      {i}
+                    </Badge>
+                  ))}
+                </Stack>
+              )}
+            </ChakraLink>
+          </Link>
+        ))}
+      </SimpleGrid>
+    </Container>
 });
 
 export default Home
