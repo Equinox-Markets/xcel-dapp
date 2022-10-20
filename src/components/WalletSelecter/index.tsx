@@ -51,10 +51,10 @@ export const WalletSelecter = observer(() => {
       return god.eth.connector.showConnector;
     },
     get networks() {
-      return [ETHMainnetConfig, BSCMainnetConfig, IotexMainnetConfig, PolygonMainnetConfig, FTMMainnetConfig, AVAXMainnetConfig];
+      return [ETHMainnetConfig, PolygonMainnetConfig, FTMMainnetConfig, AVAXMainnetConfig];
     },
     get testnet() {
-      return [ETHKovanConfig, BSCTestnetConfig, IotexTestnetConfig]
+      return [ETHKovanConfig]
     },
     close() {
       god.eth.connector.showConnector = false;
