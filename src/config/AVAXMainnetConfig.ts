@@ -6,7 +6,7 @@ export const AVAXMainnetConfig = new ChainState({
   chainId: 43114,
   networkKey: 'avax',
   rpcUrl: 'https://api.avax.network/ext/bc/C/rpc',
-  logoUrl: '/https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@1a63530be6e374711a8554f31b17e4cb92c25fa5/svg/icon/avax.svg',
+  logoUrl: '/images/avax.svg',
   explorerURL: 'https://snowtrace.io',
   explorerName: 'SnowTrace',
   Coin: new CoinState({
