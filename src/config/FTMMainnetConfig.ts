@@ -6,7 +6,7 @@ export const FTMMainnetConfig = new ChainState({
   chainId: 250,
   networkKey: 'ftm',
   rpcUrl: 'https://rpc.ftm.tools/',
-  logoUrl: '/images/ftm.svg',
+  logoUrl: '/images/ftm1.svg',
   explorerURL: 'https://ftmscan.com',
   explorerName: 'FtmScan',
   Coin: new CoinState({
