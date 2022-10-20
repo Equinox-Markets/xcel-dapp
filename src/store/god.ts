@@ -13,7 +13,8 @@ export enum Network {
   ETH = 'eth',
   BSC = 'bsc',
   IOTEX = 'iotex',
-  POLYGON = 'polygon'
+  POLYGON = 'polygon',
+  FTM = 'ftm'
 }
 
 export class GodStore {
