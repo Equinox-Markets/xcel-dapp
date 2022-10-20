@@ -3,7 +3,6 @@ import { reaction } from 'mobx';
 import { observer } from 'mobx-react-lite';
 import { useEffect } from 'react';
 import { AiOutlinePicture, AiOutlineTrophy } from "react-icons/ai";
-import { BsYoutube } from "react-icons/bs";
 import { useStore } from '../../store/index';
 import { RewardsBoard } from '../RewardsBoard';
 
