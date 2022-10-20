@@ -34,6 +34,7 @@ import { PolygonMainnetConfig } from '../../config/PolygonMainnetConfig';
 import { BSCMainnetConfig } from '../../config/BSCMainnetConfig';
 import { ETHMainnetConfig } from '../../config/ETHMainnetConfig';
 import { FTMMainnetConfig } from '../../config/FTMMainnetConfig';
+import { AVAXMainnetConfig } from '../../config/AVAXMainnetConfig';
 
 import { BSCTestnetConfig } from "../../config/BSCTestnetConfig";
 import { ETHKovanConfig } from "../../config/ETHKovanConfig";
@@ -50,7 +51,7 @@ export const WalletSelecter = observer(() => {
       return god.eth.connector.showConnector;
     },
     get networks() {
-      return [ETHMainnetConfig, BSCMainnetConfig, IotexMainnetConfig, PolygonMainnetConfig, FTMMainnetConfig];
+      return [ETHMainnetConfig, BSCMainnetConfig, IotexMainnetConfig, PolygonMainnetConfig, FTMMainnetConfig, AVAXMainnetConfig];
     },
     get testnet() {
       return [ETHKovanConfig, BSCTestnetConfig, IotexTestnetConfig]
