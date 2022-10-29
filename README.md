@@ -1,10 +1,8 @@
 # Xcel dApp Sample V1
-<a href="https://iotex.io/devdiscord" target="_blank">
-  <img src="https://github.com/iotexproject/halogrants/blob/880eea4af074b082a75608c7376bd7a8eaa1ac21/img/btn-discord.svg" height="36px">
-</a>
 
 
-This is a boilerplate template for making your awesome dApp on IoTeX and ETH, BSC, and other possible chains ([request here](https://github.com/iotexproject/iotex-dapp-sample-v2/issues/new))
+
+This is a boilerplate template for making your awesome dApp on ETH, AVAX, FTM, Polygon and other possible chains ([request here](https://github.com/iotexproject/iotex-dapp-sample-v2/issues/new))
 
 Technology used in this template are
 
